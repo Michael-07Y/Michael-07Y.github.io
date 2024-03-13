@@ -26,7 +26,45 @@
 
     <body>
 
+        <div id="loading-container">
 
+            <input disabled id="loading-text" value="Loading">
+
+        </div>
+
+        <div id="page-container">
+
+            <div id="port-container" onclick="pageChange('port')">
+
+                <div class="title-holder"> <h1 class="title-text">Portfolio</h1> </div>
+
+                <div class="description-holder"> <p class="description-text">Check out my portfolio for some basic information about me! I have a lot to show.</p> </div>
+
+                <div class="portal-holder"> <input type="button" class="portal-button" id="port-portal"> </div>
+
+            </div>
+
+            <div id="website-container" onclick="pageChange('website')">
+
+                <div class="title-holder"> <h1 class="title-text">Website</h1> </div>
+                
+                <div class="description-holder"> <p class="description-text"> Visit my website to check out some information like my 3d models and other creations!</p> </div>
+
+                <div class="portal-holder"> <input type="button" class="portal-button" id="website-portal"> </div>
+
+            </div>
+
+            <div id="project-container" onclick="pageChange('project')">
+
+                <div class="title-holder"> <h1 class="title-text">Current Project</h1> </div>
+                
+                <div class="description-holder"> <p class="description-text"> Check out my recent project and help support any future projects!</p> </div>
+
+                <div class="portal-holder"> <input type="button" class="portal-button" id="project-portal"> </div>
+
+            </div>
+
+        </div>
 
     </body>
 
