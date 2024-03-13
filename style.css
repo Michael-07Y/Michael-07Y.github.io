@@ -9,6 +9,158 @@
 
 /* Body / Background */
     body {
-        background-image:url("/images/StarBck.jpg");
+        background-color: black;
         box-shadow: 0 0 20px black inset;
     }
+
+/* Containers */
+    #page-container {
+        width: 100vw;
+        height: 100vh;
+        background-image: url("/images/bwdotgrid.jpg");
+        background-size: 100px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 50px black inset;
+        align-items: center;
+        flex-direction: row;
+        gap: 1vw;
+    }
+
+    #loading-container {
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-image: url("/images/tenor.gif");
+        background-size: 101px;
+        filter: saturate(0%);
+    }
+    /* LOADING DECOR */
+        #loading-text {
+            color: white;
+            text-shadow: 5px 5px 0px black;
+            width: 80%;
+            padding: 20px;
+            font-size: 80px;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+        }
+
+    #port-container {
+        width: 32%;
+        height: 96%;
+        background-image: linear-gradient(to top, black, rgba(192, 192, 192, 0.568), rgba(87, 87, 87, 0.644));
+        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 50px black inset;
+        border-radius: 10px;
+        border: 1px solid white;
+        transition: 0.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    #port-container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 100px rgb(194, 194, 194) inset;
+    }
+
+    #website-container {
+        width: 32%;
+        height: 96%;
+        background-image: linear-gradient(to top, black, rgba(196, 169, 97, 0.568), rgba(219, 195, 116, 0.644));
+        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 50px black inset;
+        border-radius: 10px;
+        border: 1px solid white;
+        transition: 0.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    #website-container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 100px rgb(255, 218, 95) inset;
+    }
+
+    #project-container {
+        width: 32%;
+        height: 96%;
+        background-image: linear-gradient(to top, black, rgba(133, 111, 82, 0.568), rgba(107, 83, 60, 0.644));
+        box-shadow: 0 0 20px black;
+        box-shadow: 0 0 50px black inset;
+        border-radius: 10px;
+        border: 1px solid white;
+        transition: 0.2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    #project-container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 100px rgb(255, 186, 121) inset;
+    }
+
+    /* Container Decor */
+        .title-holder {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title-text {
+            color: white;
+            font-size: 70px;
+            text-shadow: 0 0 20px black;
+            overflow: visible;
+        }
+
+        .portal-holder {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .portal-button {
+            width: 80%;
+            height: 80%;
+            background-image: url("/images/tenor.gif");
+            background-size: 100px;
+            border: 15px inset rgb(0, 0, 0);
+            box-shadow: 0 0 40px black, 0 0 30px rgb(0, 0, 0) inset;
+            border-radius: 10px;
+            cursor: pointer;
+            filter: saturate(0%);
+        }
+
+        .description-holder {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .description-text {
+            color: white;
+            text-shadow: 0 0 10px black;
+            overflow: visible;
+            font-size: 23px;
+            text-align: center;
+            width: 80%;
+        }
