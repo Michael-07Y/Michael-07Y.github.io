@@ -1,0 +1,249 @@
+/* Page CSS Reset */
+    * {
+        padding: 0;
+        margin: 0;
+        user-select: none;
+        transition: 0.2s ease-in-out;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+/* Scroll Bar Decor */
+    ::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.678);
+        border-left: 1px solid white;
+        border-radius: 20px;
+        box-shadow: -3px 0px 20px black, -1px 0 10px var(--lightRed);
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--lightRed);
+        border: 3px ridge black;
+        border-radius: 10px;
+        box-shadow: 0 0 2px black inset;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+/* Music Holder */
+    #music-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 50px;
+        width: 200px;
+        height: 80px;
+    }
+
+    #spotify-logo {
+        width: 30%;
+        height: 100%;
+        background-color: transparent;
+        background-image: url("/images/spotify-white-icon.png");
+        border: none;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    #music-button {
+        color: white;
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        height: 100%;
+        width: 35%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    #switch-text {
+        color: var(--lightRed);
+        width: 16%;
+        height: 100%;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+/* Color Palette */
+  :root {
+    --dark: #171717;
+    --standard: #444444;
+    --lightRed: #DA0037;
+    --bright: #EDEDED;
+  }
+
+/* Background Settings */
+  body {
+    background-color: var(--standard);
+  }
+
+/* Containers */
+  /* Page Container*/
+    #page-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      overflow: hidden;
+    }
+
+  /* Navigation Container */
+    #nav-container {
+      width: 16%;
+      height: 100%;
+      background-color: var(--dark);
+      border-right: 4px ridge var(--lightRed);
+      box-shadow: 0px 0px 30px var(--lightRed),1px 0px 40px black;
+    }
+    /* Name Info Holder */
+      #name-holder {
+        width: 100%;
+        height: 30%;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+        border-bottom: 2px ridge var(--lightRed);
+      }
+
+      #letter-text {
+        color: var(--bright);
+        text-shadow: -5px 0px 0px var(--lightRed);
+        font-size: 70px;
+      }
+
+      #name-text {
+        color: grey;
+        font-size: 22px;
+        text-shadow: 1px 1px 0px #363636;
+      }
+
+      #description-text {
+        color: #363636;
+        font-size: 18px;
+      }
+    /* Navigation Button Holder */
+      #button-holder {
+        width: 100%;
+        height: 52%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vh;
+      }
+
+      .nav-button {
+        width: 95%;
+        padding: 10%;
+        color: var(--bright);
+        text-shadow: -2px 0px 0px var(--lightRed);
+        font-weight: bold;
+        font-size: 20px;
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid #444444;
+        border-bottom: 2px solid #444444;
+        background-color: transparent;
+        border-radius: 5px;
+      }
+
+      .nav-button:hover {
+        color: var(--lightRed);
+        text-shadow: -3px 0px 0px var(--dark);
+        cursor: pointer;
+        background-color: #121212;
+      }
+
+      .nav-button:active {
+        color: var(--dark);
+        text-shadow: 0 0 5px var(--lightRed);
+        transform: scale(1.05);
+      }
+    /* Social Icon Buttons */
+      #icon-holder {
+        width: 100%;
+        height: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: .3vw;
+      }
+
+      .icon-button {
+        width: 22%;
+        height: 90%;
+        background-color: transparent;
+        border: none;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .icon-button:hover {
+        cursor: pointer;
+      }
+
+      .icon-button:active {
+        transform: scale(1.1);
+      }
+      /* Icon IDs */
+      #github-logo {
+        background-image: url("/images/logos/githubLogo.png");
+        background-size: 90%;
+      }
+
+      #insta-logo {
+        background-image: url("/images/logos/instaLogo.png");
+      }
+
+      #twitter-logo {
+        background-image: url("/images/logos/twitterLogo.png");
+      }
+
+      #tiktok-logo {
+        background-image: url("/images/logos/tiktok-logo.png");
+      }
+
+  /* Information Container */
+    #info-container {
+      width: 84%;
+      height: 100vh;
+      overflow: auto;
+      background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.1));
+    }
+
+    /* Name Section */
+        #name-section {
+            width: 100%;
+            height: 100vh;
+            background-image: url("/images/frame.png");
+            background-size: 305px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+        /* Name Section Decor */
+            #welcome-message {
+                color: white;
+                padding: 100px;
+                font-size: 60px;
+                text-shadow: -6px 0px 0px var(--standard);
+            }
