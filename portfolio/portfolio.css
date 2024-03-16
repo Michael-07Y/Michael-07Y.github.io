@@ -16,7 +16,7 @@
     }
 
     ::-webkit-scrollbar-button {
-        background-color: transparent;
+        background-color: black;
     }
 
     ::-webkit-scrollbar-thumb {
@@ -108,6 +108,7 @@
       background-color: var(--dark);
       border-right: 4px ridge var(--lightRed);
       box-shadow: 0px 0px 30px var(--lightRed),1px 0px 40px black;
+      z-index: 20;
     }
     /* Name Info Holder */
       #name-holder {
@@ -231,25 +232,105 @@
     }
 
     /* Name Section */
-        #name-section {
-            width: 100%;
-            height: 100vh;
-            background-image: url("/images/frame.png");
-            background-size: 305px;
-            display: flex;
-            justify-content: start;
-            align-items: center;
+      #name-section {
+          width: 100%;
+          height: 100vh;
+          background-image: url("/images/frame.png");
+          background-size: 305px;
+          display: flex;
+          justify-content: start;
+          align-items: center;
+      }
+
+      /* Name Section Decor */
+        #welcome-message {
+          color: white;
+          padding: 100px;
+          font-size: 60px;
+          text-shadow: -6px 0px 0px var(--standard);
         }
-        /* Name Section Decor */
-            #welcome-message {
-                color: white;
-                padding: 100px;
-                font-size: 60px;
-                text-shadow: -6px 0px 0px var(--standard);
-            }
-    /* About Container */
+
+    /* About Section */
       #about-section {
         width: 100%;
         height: 100vh;
-        background-color: black;
+        background-image: url("/images/numBack.jpg");
+        box-shadow: 0 0 150px black inset;
+        border-top: 4px ridge white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 4vw;
       }
+      /* About Section Decor */
+        /* Banner Areas */
+        #about-profile {
+          width: 40%;
+          height: 100%;
+        }
+
+        #language-progress {
+          width: 40%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          gap: 5vh;
+        }
+          /* Progress Decor */
+            #progress-title {
+              color: var(--bright);
+              text-shadow: -2px 0px 0px var(--lightRed), 2px 0px 0px var(--dark);
+            }
+
+            .progress-bar {
+              width: 90%;
+              height: 6%;
+              background-color: var(--bright);
+              border-top-left-radius: 10px;
+              border-bottom-left-radius: 10px;
+              overflow: hidden;
+              display: flex;
+              justify-content: start;
+              align-items: center;
+              flex-direction: row;
+              box-shadow: 0 0 30px black;
+              border: 2px solid black;
+            }
+
+            .progress-bar:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+              box-shadow: 0 0 20px var(--lightRed);
+            }
+
+            .language-holder {
+              width: 20%;
+              height: 100%;
+              background-color: var(--lightRed);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            }
+
+            .langauge-text {
+              color: var(--bright);
+              font-size: 15px;
+              text-shadow: 2px 2px 0px black;
+            }
+
+            .progess-line {
+              background-image: linear-gradient(to right, var(--dark), var(--standard));
+              height: 100%;
+            }
+
+            #HT, #CS, #JS, #PY {
+              width: 70%;
+            }
+
+            #JV {
+              width: 50%;
+            }
