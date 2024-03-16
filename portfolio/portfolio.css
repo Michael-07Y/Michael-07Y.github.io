@@ -359,3 +359,31 @@
             #JV {
               width: 50%;
             }
+
+    /* Project Section */
+      #project-section {
+        width: 100%;
+        height: 100vh;
+        background-color: lime;
+      }
+    
+    /* Contact Section */
+      #contact-section {
+        width: 100%;
+        height: 100vh;
+        background-color: blue;
+      }
+
+    /* Skills Section */
+      #skills-section {
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+      }
+
+    /* Footer Section */
+      #footer-section {
+        width: 100%;
+        height: 50vh;
+        background-color: yellow;
+      }
