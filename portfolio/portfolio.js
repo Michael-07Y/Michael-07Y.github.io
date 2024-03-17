@@ -5,6 +5,7 @@ let hip = new Audio('/audio/hip.mp3');
 function playMusic() {
     hip.volume = .02;
     hip.play();
+    hip.loop = true;
 }
 playMusic();
 
