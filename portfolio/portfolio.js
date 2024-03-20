@@ -38,3 +38,29 @@ function socialBtn(num) {
         console.log("Error 404 | Redirect Issue!");
     }
 }
+
+// CONTACT BUTTON SCRIPT
+
+function contactButton(social) {
+    if (social == '1') {
+        console.log("User being redirected!");
+        window.location.assign("https://www.instagram.com/skyzerbefr/");
+    } else if (social == '2') {
+        console.log("User being redirected!");
+        window.location.assign("https://github.com/Michael-07Y");
+    } else if (social == '3') {
+        console.log("User being redirected!");
+        window.location.assign("https://twitter.com/SkyzerNetworks");
+    } else if (social == '4') {
+        console.log("User being redirected!");
+        window.location.assign("https://www.tiktok.com/@skyzerbefr");
+    } else if (social == '5') {
+        console.log("User being redirected!");
+        window.location.assign("https://www.youtube.com/channel/UCeVDiHSu5EhVeQSTxhtO_kA");
+    } else if (social == '6') {
+        console.log("User being redirected!");
+        window.location.assign("https://www.twitch.tv/skyzerbefr");
+    } else {
+        console.log("Error 404 | Redirect Issue!");
+    } 
+}
